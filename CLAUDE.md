@@ -3,6 +3,9 @@
 Personal project. Vault: **The Vault**, page `[[Laser Engraving]]`. Commit rule: global
 `~/.claude/CLAUDE.md` (wait for "commit, sync, and push", or `/cs` / `/csp`).
 
+**GitHub-only by design** (`kstorm12/Laser`): no Gitea mirror, unlike most personal repos. Do not
+add one in any remote-wiring or mirror-consistency pass.
+
 Not a code project: no build, no tests, no `typecheck`/`test`/`lint` declared. The deliverables
 are proven laser settings, design files, and printable jigs.
 
