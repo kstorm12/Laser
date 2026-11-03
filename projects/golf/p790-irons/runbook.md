@@ -1,7 +1,8 @@
 # P790 irons: back-cavity engraving
 
-TaylorMade P790, chrome finish. Target: back cavity. Technique: engrave through chrome,
-cleanup pass, paint fill.
+TaylorMade P790, chrome finish. Target: back cavity. Technique: **frost**, a single-pass
+surface mark that stays in the plating. No recess, no paint fill. (Changed 2026-11-03 from engrave +
+paint fill: a recess through the chrome exposes steel that rusts unless filled.)
 
 Generation: **2019 P790**. Zone: **lower back panel** (below the crease, between the TM logo and
 the hosel). Design: **STORM wordmark, T as a lightning bolt** (`logos/storm/`, variant TBD).
@@ -19,22 +20,22 @@ degrees across the set.
 
 1. [ ] **Focus test**: record working distance in `machine.md`.
 2. [ ] **Coupon**: buy a junk chrome iron (used golf shop, about $5).
-3. [ ] **Test grid** on the coupon: `test-grids/chrome-depth-grid.md`. Pick the winning cell.
-4. [ ] **Paint test** on the coupon: degrease (isopropyl), fill with enamel (One Shot or Testors),
-       wipe across the recess with a lightly solvent-damp rag or card, cure 24h. Check sharpness.
+3. [ ] **Test grid** on the coupon: `test-grids/chrome-frost-grid.md`. Pick the winning cell.
+4. [ ] **Rust check** on the coupon: salt-water drop on the winning cells, 24h (frost grid). The
+       winner must show no rust.
 5. [ ] **Jig**: print it (`jigs/`), check the head sits level (phone level app on the back
        cavity) and does not rock.
 6. [ ] **Design**: vector art in `designs/`, sized to the cavity. Import to EzCad2 (DXF or AI),
-       hatch it, assign the proven pen, save `designs/p790-<design>.ezd`.
+       hatch it, assign the proven frost pen, save `designs/p790-<design>.ezd`.
 7. [ ] **Dry run** on the coupon in the jig with the real design file.
 8. [ ] **First real iron**: the one you hit least (PW or a long iron). Red-light preview, then mark
-       in bursts, cool between.
-9. [ ] Paint fill, cure, inspect. Then the rest of the set, one at a time.
+       once.
+9. [ ] Inspect under one light from several angles. Then the rest of the set, one at a time.
 
-## Heat discipline (hollow body)
+## Heat (hollow body)
 
-The P790 has SpeedFoam behind the face. Split the loop count into bursts (for example 8 loops as
-2 runs of 4) and let the head cool to warm-to-the-touch between them.
+The P790 has SpeedFoam behind the face. A single frost pass puts in little heat, but if a second
+loop is needed, let the head cool to warm-to-the-touch first.
 
 ## Notes
 

@@ -58,6 +58,10 @@ A grid of small squares, each assigned a different pen, used to find a setting o
 #### Coupon
 A scrap test piece of the same material as the real job (a junk chrome iron for the P790 job).
 
+#### Frost
+A single fast, low-power pass that leaves a matte white/gray mark on the surface with no
+measurable depth. On chrome it stays inside the plating, so it needs no paint fill or seal.
+
 #### Paint fill
 Filling an engraved recess with enamel, then wiping the surface clean so paint stays only in the
 recess. On chrome irons it also seals the exposed steel against rust.

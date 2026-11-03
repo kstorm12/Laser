@@ -5,7 +5,9 @@ this repo at `C:\Laser`. It pulls settings and art from GitHub, and pushes back 
 saved job files (`.ezd`, `.lbrn2`) and photos. Omarchy and the PC are both writers, so each one
 pulls before it edits.
 
-The repo is **public**: anything pushed from the PC (photos, job files) is visible to anyone.
+The repo is **public**: anyone can clone and pull it, and anything pushed from the PC (photos,
+job files) is visible to anyone. Only `kstorm12` can push. The PC pushes with a token scoped to
+this one repo (setup step 3).
 
 ## One-time setup
 
@@ -28,8 +30,16 @@ The repo is **public**: anything pushed from the PC (photos, job files) is visib
 
    Keep the clone at `C:\Laser`: a short path stays clear of the 260-character MAX_PATH limit.
 
-3. First push signs in. The first time `save.bat` pushes, Git Credential Manager (bundled with
-   Git for Windows) opens a browser for a GitHub login and remembers it. Pulling needs no login.
+3. Give the PC a token that can push to **this repo only**. Pulling needs no login (the repo is
+   public); pushing does. Do not use the browser "Sign in with your browser" option: it grants
+   the PC every repo on the account, private ones included.
+   - On GitHub: Settings > Developer settings > Personal access tokens > **Fine-grained** >
+     Generate. Repository access: **Only select repositories** > `kstorm12/Laser`. Permissions:
+     **Contents: Read and write**, nothing else. Expiry: 1 year (calendar the renewal).
+   - On the first `save.bat` push, when Git Credential Manager asks, choose **Token** and paste
+     it. It is stored in Windows Credential Manager, so anyone using that Windows login can push
+     to this repo, and nothing else.
+   - To revoke: delete the token on GitHub. The PC can still pull.
 
 4. Pin `update.bat` and `save.bat` to the desktop or taskbar (right-click > Send to > Desktop).
 

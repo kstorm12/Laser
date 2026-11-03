@@ -43,7 +43,7 @@ Settings marked `STARTING POINT` have not been proven on this machine yet.
 ## Current job
 
 `projects/golf/p790-irons/`: STORM logo on the back panel of 2019 TaylorMade P790 irons,
-engraved through the chrome and paint-filled. EzCad2 card: `ezcad-setup.md`.
+frosted into the chrome (surface mark, no paint fill). EzCad2 card: `ezcad-setup.md`.
 
 ## Regenerating the logos
 
