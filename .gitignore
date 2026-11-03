@@ -1,0 +1,13 @@
+# EzCad2 autosave/backup files
+*.bak
+*.ezd~
+# Raw phone photos are big; keep only the cropped ones committed in photos/
+photos/raw/
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python bytecode
+__pycache__/
+*.pyc
