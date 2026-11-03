@@ -36,7 +36,8 @@ Pulse rate in kHz. Lower = fewer, harder pulses (deeper, rougher). Higher = more
 (smoother, shallower, better for cleanup).
 
 #### Hatch
-The fill pattern EzCad2 uses to engrave an area. Set per object, not per pen.
+The fill pattern EzCad2 uses to engrave an area. Set per object, not per pen. Recommendations
+by goal: `hatch.md`.
 
 #### Line distance
 Hatch spacing in mm. Smaller = denser fill, more time, more heat.

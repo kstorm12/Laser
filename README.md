@@ -9,6 +9,7 @@ and reused.
 | Path | What |
 |---|---|
 | `machine.md` | Machine facts, focus test, safety. **Start here.** |
+| `hatch.md` | Hatch recommendations by goal, every EzCad2 hatch field explained |
 | `rotary.md` | Rotary attachment: hookup, EzCad2 parameters, calibration test |
 | `materials/` | The settings library, one file per material. Copy `_template.md` for a new one |
 | `test-grids/` | How to build a parameter test grid in EzCad2 to find a setting |

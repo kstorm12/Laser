@@ -4,21 +4,43 @@ Status: **not yet calibrated on this machine.** Menu and field names below come 
 EzCad2 rotary guide (same BJJCZ EzCad2 build family); your version may word them slightly
 differently. Record the calibrated values in the table at the bottom once found.
 
-Rotary type: **TBD (chuck or roller).** Chuck (jaws) for small round parts held at the end:
-rings, pens, flashlights, handles. Roller for tumblers and bottles that sit on top.
+## This rotary: OMTech LRA-602D-00, 80mm 3-jaw chuck
+
+| Spec | Value | Source |
+|---|---|---|
+| Type | 3-jaw chuck, opened and closed with the chuck key | manual |
+| Clamping range | 2 to 70 mm (manual); product page says 5 to 35 mm, 35 to 80 mm with jaws reversed | manual / product page |
+| Motor | 2-phase 57 stepper, 24 V | product page / manual |
+| Connector | 4-pin aviation plug, to the rotary (Y-axis) port | manual |
+| Tilt | Up to 90 deg vertical adjustment | product page |
+| Base / size / weight | 9.5 x 12 cm base, 21 x 12 x 16.5 cm, 4.8 kg | manual |
+| Pulses per revolution, gear ratio | **Not published.** Find them with the calibration test (section 3) | |
+
+Chuck, so: **workpiece diameter = the part's diameter** at the design (calipers). The roller
+notes below do not apply. Good for parts you can grip at one end: pens, flashlights, knife and
+tool handles, rings, small cups (grip the rim from inside with the jaws reversed). Long or heavy
+parts need support at the far end; this rotary has no tailstock.
+
+**EzCad2 limit:** forum users report EzCad2 will not turn the rotary more than about 6 full
+revolutions in one job. One wrap is about 1 revolution, so this only matters for repeated rings.
+
+**OMTech ships EzCad2 preconfigured.** Before changing anything, open Param (F3) and the rotary
+dialog, write down what is already set, and run the calibration test with those values first.
+They may already be right.
 
 ## 1. Hardware
 
 1. **Machine and control box powered OFF** before plugging or unplugging the rotary. Hot-plugging
    a stepper can kill its driver.
-2. Plug the rotary into the **4-pin round port** on the control unit (OMTech manual).
+2. Plug the rotary into the **4-pin round port** (the rotary / Y-axis port) on the control unit.
 3. Place the rotary so its axis runs **exactly parallel to the X or Y edge of the field**. Note
    which one: EzCad2 needs to know (X or Y axis, below). Square it against the bed's edge or a
    printed square.
-4. Find the **stepper driver** (a small box with DIP switches, inside the control box or on the
-   rotary). Its label has a table: the switch positions set **pulses per revolution**
-   (subdivision, for example 6400, 12800, 25600). Write down what it is set to. Change the switches
-   only with power off, and only together with the EzCad2 value.
+4. Only if the calibration test fails badly: find the **stepper driver** (a small box with DIP
+   switches; on the LRA-602D it is not in the rotary, so it is inside the laser's control box).
+   Its label has a table: the switch positions set **pulses per revolution** (subdivision, for
+   example 6400, 12800, 25600). Write down what it is set to. Change the switches only with power
+   off, and only together with the EzCad2 value.
 5. Power on.
 
 ## 2. EzCad2 parameters
@@ -60,8 +82,8 @@ calibration test below; if it fails, fall back to the part's diameter and calibr
 
 ## 3. Calibration test (do once, before any real part)
 
-Use a cheap part of known diameter: scrap steel or aluminum tube, an old powder-coated tumbler,
-a painted metal can. Never PVC pipe (chlorine gas). Measure it with calipers.
+Use a cheap round metal part 20 to 30 mm across that the chuck can grip: scrap steel or aluminum
+tube or round bar, an old flashlight, a large socket. Never PVC pipe (chlorine gas). Measure it with calipers.
 
 1. Draw a **20 x 20 mm square outline** (no hatch). Light pen: 30% power, 1000 mm/s, 50 kHz,
    loop 1, so it barely frosts.
@@ -107,10 +129,10 @@ a painted metal can. Never PVC pipe (chlorine gas). Measure it with calipers.
 
 | Field | Value | Date |
 |---|---|---|
-| Rotary type (chuck / roller) | | |
+| Rotary | OMTech LRA-602D-00, 80mm 3-jaw chuck | 2026-11-03 |
+| EzCad2 values as shipped (before any change) | | |
 | Rotary parallel to (X / Y) | | |
 | Driver DIP pulses per revolution | | |
 | Gear ratio | | |
 | Calibrated pulses per revolution | | |
 | Reverse | | |
-| Roller diameter (roller rotary) | | |

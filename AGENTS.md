@@ -29,6 +29,8 @@ in `rotary.md`.
 - Every row names lens, working distance, and status. New rows start as `STARTING POINT`; only
   Kyle promotes a row to `PROVEN`, after it worked on a real piece and the photo is committed.
 - `research/community-settings.md` is sourced input for starting points, never proof.
+- Hatch defaults by goal (line distance, angles, type) are in `hatch.md`; a material file's own
+  row overrides them once proven.
 - Tune one variable at a time, usually Loop count, so a result is traceable.
 - Test on a coupon of the same material before the real piece.
 
