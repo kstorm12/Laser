@@ -11,7 +11,8 @@ laser settings, vector art, EzCad2 job files, and printable jigs.
 
 OMTech FMM-5RW2-US: 50W **Raycus Q-switched** fiber, 1064nm, **F290 lens**, 200x200mm field,
 rotary. Run from **EzCad2 on a Windows PC**; files reach it by LocalSend, and this repo is the
-master copy. Facts and calibration live in `machine.md`.
+master copy. Facts and calibration live in `machine.md`; rotary setup and its calibrated values
+in `rotary.md`.
 
 - **Frequency 50 to 100 kHz.** That is the RFL-P50QB source's rated range; below 50 kHz
   overdrives it. Community recipes at 20 to 30 kHz were written for other sources: translate them
