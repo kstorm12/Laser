@@ -6,7 +6,7 @@
 | Source | Raycus 50W, Q-switched (not MOPA), 1064nm |
 | Lens | F290 |
 | Field | 200 x 200mm (7.9 x 7.9in) |
-| Software | EzCad2 (Windows). LightBurn compatible, not licensed |
+| Software | EzCad2 (Windows), primary. LightBurn galvo planned, side by side: `lightburn.md` |
 | Accessories | Rotary axis |
 | Working distance | **TBD: run the focus test below and record it here** |
 | Raycus frequency range | **50-100 kHz if the source is an RFL-P50QB** (Raycus manual: never mark outside it). Confirm the model on the source's label |

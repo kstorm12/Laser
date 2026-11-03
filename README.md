@@ -1,7 +1,7 @@
 # Laser
 
 Proven settings, art, and job files for an **OMTech 50W fiber laser** (Raycus Q-switched,
-F290 lens, 200x200mm field, EzCad2). The goal: every material gets dialed in once, written down,
+F290 lens, 200x200mm field, EzCad2, LightBurn alongside). The goal: every material gets dialed in once, written down,
 and reused.
 
 ## Layout
@@ -17,6 +17,9 @@ and reused.
 | `projects/<category>/<job>/` | One folder per job: `runbook.md`, `designs/`, `photos/` |
 | `logos/` | Reusable art, plus scripts that generate it |
 | `jigs/` | 3D-printable fixtures (FreeCAD source + STL) |
+| `windows-pc.md` | The laser PC's git clone: setup, `update.bat` / `save.bat` |
+| `lightburn.md` | LightBurn galvo setup and EzCad2 to LightBurn term map |
+| `machine-config/` | Backups of the EzCad2 config (`markcfg7`) and lens correction |
 | `GLOSSARY.md` | What the terms mean (Pen, Loop count, Coupon, ...) |
 | `AGENTS.md` | Instructions for AI coding agents |
 

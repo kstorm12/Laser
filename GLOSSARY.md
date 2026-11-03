@@ -1,7 +1,8 @@
 # GLOSSARY.md
 
 Vocabulary for this repo: laser settings, EzCad2 terms, and job workflow. EzCad2's own UI names
-are used where one exists, so the docs match what is on screen.
+are used where one exists, so the docs match what is on screen. LightBurn's name for each is in
+`lightburn.md`.
 
 ## Machine and optics
 

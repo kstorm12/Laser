@@ -10,8 +10,9 @@ laser settings, vector art, EzCad2 job files, and printable jigs.
 ## The machine (every setting assumes it)
 
 OMTech FMM-5RW2-US: 50W **Raycus Q-switched** fiber, 1064nm, **F290 lens**, 200x200mm field,
-rotary. Run from **EzCad2 on a Windows PC**; files reach it by LocalSend, and this repo is the
-master copy. Facts and calibration live in `machine.md`; rotary setup and its calibrated values
+rotary. Run from **EzCad2 on a Windows PC**, with LightBurn (galvo) alongside (`lightburn.md`).
+The PC keeps a git clone at `C:\Laser` and both pulls and pushes (`windows-pc.md`), so pull
+before editing; this repo is the master copy. Facts and calibration live in `machine.md`; rotary setup and its calibrated values
 in `rotary.md`.
 
 - **Frequency 50 to 100 kHz.** That is the RFL-P50QB source's rated range; below 50 kHz
@@ -43,6 +44,8 @@ PVC, vinyl, and PTFE release toxic gas under a laser. Decline settings for them 
 - EzCad2 imports **DXF** reliably: closed polylines in mm, R12. `logos/storm/make_logo.py` holds
   a minimal writer (`write_dxf`) to reuse. Shapes must not overlap: EzCad2 hatches even-odd, so
   overlaps engrave as holes.
+- Job files: `.ezd` (EzCad2) and `.lbrn2` (LightBurn) sit side by side in a job's `designs/`.
+  `.gitattributes` keeps them byte-exact; `.bat` files must stay CRLF.
 - Python helpers stay stdlib plus fontTools, run with `python3`.
 - Docs: American English, ISO dates, no em dashes.
 
