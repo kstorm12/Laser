@@ -42,18 +42,19 @@ Settings marked `STARTING POINT` have not been proven on this machine yet.
 
 ## Current job
 
-`projects/golf/p790-irons/`: STORM logo on the back panel of 2019 TaylorMade P790 irons,
-frosted into the chrome (surface mark, no paint fill). EzCad2 card: `ezcad-setup.md`.
+`projects/golf/p790-irons/`: 2019 TaylorMade P790 irons, frosted into the chrome (surface mark,
+no paint fill). Back panel: swamp scene with an alligator (image). Face: "FORE RIGHT" chalkboard
+lines (vector). Steps: `runbook.md`; EzCad2 card: `ezcad-setup.md`.
 
-## Regenerating the logos
+## Regenerating the art
 
 ```bash
-cd logos/storm
-python3 make_logo.py --width 32     # STORM wordmark variants, SVG + DXF
-python3 make_emblem.py --height 10  # emblem variants, SVG + DXF
+cd logos/fore-right && python3 make_fore_right.py --width 55 --height 28 --rows 10  # SVG + DXF
+cd logos/swamp && python3 make_swamp.py --width 60 --height 24 --dpi 600 --strip   # PNGs
 ```
 
-Needs Python 3 and `fontTools`.
+Sizes are placeholders until the club is measured (see the P790 runbook). Needs Python 3;
+`make_fore_right.py` also needs `fontTools`.
 
 ## Safety
 

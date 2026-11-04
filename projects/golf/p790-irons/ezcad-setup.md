@@ -1,4 +1,4 @@
-# P790 logo: EzCad2 setup card (frost)
+# P790 face text: EzCad2 setup card (frost)
 
 Status: **STARTING POINT, not yet proven on this machine.** The real numbers come from
 `test-grids/chrome-frost-grid.md` on the junk iron. Put the winning cell's Power and Speed into
@@ -34,18 +34,20 @@ Use the line distance the grid proved. If hatch lines show, try 0.02 on the coup
 
 ## Setup, every iron
 
-1. Import the logo: File > Import vector, pick the `.dxf` from `logos/storm/`. Check the size
-   in the property bar (about 10 mm tall). Unlock the aspect ratio only if you mean to.
-2. Hatch it (table above). Assign **Pen 1**.
-3. Club in the jig, back panel level (phone level reads 0), lens at focus. Frost is sensitive to
+1. Import the art: File > Import vector, pick `logos/fore-right/fore-right.dxf` (the face text;
+   the back panel is an image, see the runbook). Check the size in the property bar matches what
+   the script printed. Unlock the aspect ratio only if you mean to.
+2. Hatch it (table above), but with **Mark contour ON**: on letters this small the outline keeps
+   edges crisp. Assign **Pen 1**.
+3. Club in the jig face-up, face level (phone level reads 0), lens at focus. Frost is sensitive to
    focus: an uneven panel gives an uneven cloud.
-4. Wipe the panel with isopropyl alcohol. Fingerprints and oil mark as blotches.
-5. **Red light** (F1): the outline traces on the panel. Move/rotate the logo in EzCad2 until it
-   sits where you want and is square to the crease. Glasses on.
+4. Wipe the face with isopropyl alcohol. Fingerprints and oil mark as blotches.
+5. **Red light** (F1): the outline traces on the face. Move/rotate the art in EzCad2 until the
+   rows sit parallel to the scoring lines. Glasses on.
 6. **Mark** (F2) once.
 7. Look before moving the club, under one light from a few angles. Too faint: mark once more with
    the same pen now. Once the club moves, it will not line up again exactly.
-8. Save as `designs/p790-storm.ezd` after the first iron, so the rest just load it.
+8. Save as `designs/p790-fore-right.ezd` after the first iron, so the rest just load it.
 
 ## Reading the junk-iron result
 

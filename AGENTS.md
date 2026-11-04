@@ -41,8 +41,8 @@ PVC, vinyl, and PTFE release toxic gas under a laser. Decline settings for them 
 
 ## Writing files
 
-- EzCad2 imports **DXF** reliably: closed polylines in mm, R12. `logos/storm/make_logo.py` holds
-  a minimal writer (`write_dxf`) to reuse. Shapes must not overlap: EzCad2 hatches even-odd, so
+- EzCad2 imports **DXF** reliably: closed polylines in mm, R12. `logos/fore-right/make_fore_right.py`
+  holds a minimal writer (`write_dxf`) to reuse. Shapes must not overlap: EzCad2 hatches even-odd, so
   overlaps engrave as holes.
 - Job files: `.ezd` (EzCad2) and `.lbrn2` (LightBurn) sit side by side in a job's `designs/`.
   `.gitattributes` keeps them byte-exact; `.bat` files must stay CRLF.
