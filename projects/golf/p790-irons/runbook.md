@@ -6,7 +6,8 @@ paint fill: a recess through the chrome exposes steel that rusts unless filled.)
 
 Generation: **2019 P790**. Zone: **lower back panel** (below the crease, between the TM logo and
 the hosel). Design: back panel = **swamp scene with an alligator** (`logos/swamp/`); face = **"FORE RIGHT"
-chalkboard lines** (`logos/fore-right/`).
+chalkboard lines** (`logos/fore-right/`). Back-panel alternates under consideration: **cropped $100
+bill** (`logos/hundred/`) and **Damascus swirl** (`logos/swirl/`), both below.
 
 | Club | 3i | 4i | 5i | 6i | 7i | 8i | 9i | PW |
 |---|---|---|---|---|---|---|---|---|
@@ -61,6 +62,34 @@ chrome is the dark (silhouettes). Art: `logos/swamp/` (generated, stdlib Python)
        - LightBurn: Image layer, mode **Pass-Through**, DPI = the winner. (Or `swamp-gray.png` with
          LightBurn's own Jarvis dither, same DPI, to compare.)
 4. [ ] Real club: jig level, at focus, red-light the image's bounding box, mark once.
+
+## Back panel, alternate: cropped $100 bill (image frost)
+
+The left part of a $100 (Franklin, seal, serial, two "100"s), tilted so it bleeds off the panel,
+after the Cleveland RTZ "$100" wedge. On chrome the look flips from that black wedge: the note's
+**paper is frost, its ink stays bare chrome** (mirror linework on a matte note). The cut edge
+at the security ribbon fades out. Art: `logos/hundred/` (source: public-domain BEP scan from
+Wikimedia Commons; one-sided and about half size, so within 18 USC 504).
+
+- Same workflow as the swamp: `python3 make_hundred.py --strip` writes
+  `hundred-strip-<dpi>-dither.png` (Franklin's nose and mouth, 16 x 8mm) at 400 to 800 dpi
+  for the coupon. Pick the DPI, then regenerate at the measured panel size.
+- Composition: `--zoom` (0.5 = face about 11mm brow to chin), `--angle`, `--x` / `--y` (mm).
+  The bill's micro-print and fine lines drop out at this size; the portrait, "100"s, seal and
+  serial hold.
+- Frost reads darker than chrome on the coupon: `--invert` (frosts the ink instead).
+
+## Back panel, alternate: Damascus swirl (line frost)
+
+Fixed-width frost lines tracing warped contours on bare chrome, after the Cleveland RTZ Tour Rack
+swirl wedge. Two-tone, so no dither and no DPI strip: import `swirl.png` as a bitmap at its DPI,
+Dither off. Art: `logos/swirl/`.
+
+- Coupon: frost a 20mm square of it with the proven frost pen. Check the 0.45mm lines hold clean
+  edges and stay separate where they bunch. Merging: `--line 0.35` or `--bands 8`.
+- `--seed` gives a different pattern per club with the same density; `--cell`, `--bands`,
+  `--warp` set the scale, line count, and twist. `--invert` = chrome lines on frost (about 60%
+  frost, more heat).
 
 ## Face: "FORE RIGHT" chalkboard lines (one club first)
 

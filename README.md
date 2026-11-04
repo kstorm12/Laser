@@ -43,7 +43,8 @@ Settings marked `STARTING POINT` have not been proven on this machine yet.
 ## Current job
 
 `projects/golf/p790-irons/`: 2019 TaylorMade P790 irons, frosted into the chrome (surface mark,
-no paint fill). Back panel: swamp scene with an alligator (image). Face: "FORE RIGHT" chalkboard
+no paint fill). Back panel: swamp scene with an alligator (image); alternates under
+consideration: cropped $100 bill (image) and Damascus swirl (lines). Face: "FORE RIGHT" chalkboard
 lines (vector). Steps: `runbook.md`; EzCad2 card: `ezcad-setup.md`.
 
 ## Regenerating the art
@@ -51,6 +52,8 @@ lines (vector). Steps: `runbook.md`; EzCad2 card: `ezcad-setup.md`.
 ```bash
 cd logos/fore-right && python3 make_fore_right.py --width 55 --height 28 --rows 10  # SVG + DXF
 cd logos/swamp && python3 make_swamp.py --width 60 --height 24 --dpi 600 --strip   # PNGs
+cd logos/hundred && python3 make_hundred.py --width 60 --height 24 --dpi 600 --strip  # PNGs
+cd logos/swirl && python3 make_swirl.py --width 60 --height 24                      # PNG
 ```
 
 Sizes are placeholders until the club is measured (see the P790 runbook). Needs Python 3;
